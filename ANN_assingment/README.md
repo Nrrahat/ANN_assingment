@@ -1,0 +1,9 @@
+# Performance Analysis
+
+The Shallow Neural Network and Deep Neural Network were evaluated on the same test dataset using Accuracy, Precision, Recall, F1-Score, and AUC metrics. The Deep Neural Network achieved better overall performance, demonstrating its ability to learn more complex feature representations through multiple hidden layers. This improvement was reflected in higher classification metrics and a stronger ROC-AUC score compared to the Shallow Neural Network.
+
+Analysis of the training history indicates that both models converged successfully during training. The Shallow Neural Network showed stable learning behavior with a relatively small gap between training and validation performance. In contrast, the Deep Neural Network achieved lower training loss and higher training accuracy, but exhibited a larger separation between training and validation curves, suggesting a greater tendency toward overfitting.
+
+To reduce overfitting, Dropout regularization was incorporated into the Deep Neural Network architecture. The regularization strategy improved the model's generalization ability and helped maintain strong performance on unseen test data. The confusion matrices further confirmed that the Deep Neural Network produced fewer misclassifications than the Shallow Neural Network.
+
+Overall, the Deep Neural Network provided a measurable improvement in predictive performance and demonstrated superior learning capacity for this classification task. Although it required more computational resources and careful hyperparameter tuning, the additional complexity was justified by the gains in evaluation metrics and classification effectiveness.
